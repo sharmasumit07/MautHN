@@ -1,0 +1,16 @@
+/* IoT Services Component Styles */
+.iot-services-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .iot-token {
+    margin-top: 10px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  #qrCode {
+    margin-top: 20px;
+  }
+  
