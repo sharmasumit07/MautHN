@@ -53,7 +53,7 @@ const Requests = () => {
     fetchRequests();
 
     // Set an interval to fetch requests every 5 seconds
-    const intervalId = setInterval(fetchRequests, 5000); 
+    const intervalId = setInterval(fetchRequests, 5000);
 
     // Clean up the interval on component unmount
     return () => clearInterval(intervalId);
@@ -71,7 +71,8 @@ const Requests = () => {
       headerName: 'Actions',
       flex: 1,
       renderCell: (params) => (
-        <Button
+        <Button sx={{backgroundColor: '#00ffea', color: 'black',
+        }}
           variant="contained"
           onClick={() => handleAuth(params.row.perms, params.row.token)}
         >
@@ -106,6 +107,37 @@ const Requests = () => {
           slots={{ toolbar: GridToolbar }}
           disableSelectionOnClick
           autoHeight
+          sx={{
+            '& .MuiDataGrid-root': {
+              backgroundColor: '#1a1a1a',
+            },
+            '& .MuiDataGrid-cell': {
+              color: 'white',
+            },
+            '& .MuiDataGrid-columnHeader': {
+              color: 'white',
+              backgroundColor: 'Silver',
+              fontSize: '1.5rem',
+            },
+            '& .MuiDataGrid-footerContainer': {
+              backgroundColor: '#1a1a1a',
+              color: 'white',
+            },
+            '& .MuiDataGrid-row:hover': {
+              backgroundColor: '#333333',
+            },
+            '& .MuiTablePagination-root': {
+              color: 'white',
+            },
+            '& .MuiDataGrid-toolbarContainer': {
+              backgroundColor: '#1a1a1a',
+              color: 'white',
+            },
+            '& .MuiDataGrid-overlay': {
+              backgroundColor: '#1a1a1a',
+              color: 'red',
+            },
+          }}
         />
       </Box>
 

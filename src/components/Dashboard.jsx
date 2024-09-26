@@ -49,7 +49,7 @@ const Dashboard = ({ setId }) => {
   const handleLogout = () => {
     sessionStorage.removeItem("id");
     setId(null);
-    navigate("/login");
+    navigate("/");
   };
 
   const handleAuthenticate = () => {

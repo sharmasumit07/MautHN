@@ -67,6 +67,37 @@ const Logs = () => {
           rowsPerPageOptions={[5, 10, 20]} // Options for page size
           disableSelectionOnClick
           autoHeight
+          sx={{
+            '& .MuiDataGrid-root': {
+              backgroundColor: '#1a1a1a',
+            },
+            '& .MuiDataGrid-cell': {
+              color: 'white',
+            },
+            '& .MuiDataGrid-columnHeader': {
+              color: 'white',
+              backgroundColor: 'Silver',
+              fontSize: '1.5rem',
+            },
+            '& .MuiDataGrid-footerContainer': {
+              backgroundColor: '#1a1a1a',
+              color: 'white',
+            },
+            '& .MuiDataGrid-row:hover': {
+              backgroundColor: '#333333',
+            },
+            '& .MuiTablePagination-root': {
+              color: 'white',
+            },
+            '& .MuiDataGrid-toolbarContainer': {
+              backgroundColor: '#1a1a1a',
+              color: 'white',
+            },
+            '& .MuiDataGrid-overlay': {
+              backgroundColor: '#1a1a1a',
+              color: 'red',
+            },
+          }}
         />
       </Box>
     </Box>

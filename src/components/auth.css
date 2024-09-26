@@ -5,7 +5,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8); /* Dark background */
+  background: rgba(11, 15, 28, 0.8); /* Dark background matching the overall theme */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@
   border-radius: 20px;
   width: 400px;
   max-width: 90%;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5); /* Depth shadow */
+  box-shadow: 0 10px 40px rgba(0, 255, 234, 0.3); /* Neon shadow matching theme */
   text-align: center;
   animation: slideIn 0.5s ease-in-out forwards;
   backdrop-filter: blur(15px) saturate(120%);
@@ -35,13 +35,13 @@
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #f5f5f5; /* Lighter text for visibility */
+  color: #00ffea; /* Neon text color */
   text-transform: uppercase;
 }
 
 /* Ensure "Authentication Required" text is visible */
 .popup-header h3 {
-  color: #000; /* Lighter text for better contrast */
+  color: #ffffff; /* White text for contrast */
   margin: 0;
 }
 
@@ -53,19 +53,18 @@
   position: absolute;
   top: 10px; /* Top-right position */
   right: 10px;
-  
 }
 
 .popup-close:hover {
   color: #ff0000;
   transform: scale(1.2);
-  box-shadow: 0 0 12px #ff0000, 0 0 25px rgba(255, 0, 0, 0.7);
+  box-shadow: 0 0 12px #ff0000, 0 0 25px rgba(255, 0, 0, 0.7); /* Neon red hover effect */
 }
 
 /* Proper spacing around the instructions */
 .instructions {
   font-size: 16px;
-  color: #000;
+  color: #ffffff; /* White text for readability */
   margin: 10px 0 20px 0;
   font-weight: 300;
   line-height: 1.5;
@@ -75,7 +74,7 @@
 h3 {
   font-size: 22px;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #00ffea; /* Neon blue text */
   text-transform: uppercase;
   letter-spacing: 1px; /* Adds sharpness */
 }
@@ -96,32 +95,32 @@ h3 {
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.1); /* Transparent card */
   border: 1px solid rgba(255, 255, 255, 0.2); /* Soft border */
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  box-shadow: 0 5px 20px rgba(0, 255, 234, 0.3); /* Soft neon shadow */
   transition: box-shadow 0.3s ease, transform 0.2s;
 }
 
 .verification-item:hover {
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4); /* Stronger hover effect */
+  box-shadow: 0 8px 25px rgba(0, 255, 234, 0.4); /* Stronger hover effect */
   transform: translateY(-5px); /* Subtle elevation */
 }
 
 /* Neon buttons with smooth transitions */
 .verify-button {
   padding: 10px 20px;
-  background-color: #1e90ff; /* Neon blue */
-  color: #fff;
+  background-color: #00ffea; /* Neon blue */
+  color: #0b0f1c; /* Dark text for contrast */
   border: none;
   border-radius: 12px;
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
-  box-shadow: 0 0 10px #1e90ff, 0 0 25px rgba(30, 144, 255, 0.5); /* Neon glow */
+  box-shadow: 0 0 10px #00ffea, 0 0 25px rgba(0, 255, 234, 0.5); /* Neon glow */
 }
 
 .verify-button:hover {
-  background-color: #0066cc;
+  background-color: #00b8a3;
   transform: translateY(-4px);
-  box-shadow: 0 0 15px #0066cc, 0 0 35px rgba(0, 102, 204, 0.7);
+  box-shadow: 0 0 15px #00b8a3, 0 0 35px rgba(0, 184, 163, 0.7); /* Neon hover */
 }
 
 .verify-button:disabled {
@@ -143,8 +142,8 @@ h3 {
   width: 100%;
   max-width: 350px;
   border-radius: 12px;
-  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
-  background: #000;
+  box-shadow: 0 6px 25px rgba(0, 255, 234, 0.3); /* Neon shadow */
+  background: #0b0f1c; /* Dark background matching theme */
 }
 
 /* Capture button with green neon effect */
@@ -171,11 +170,11 @@ h3 {
   margin-top: 20px;
   padding: 10px;
   border-radius: 12px;
-  background-color: rgba(0, 255, 0, 0.1); /* Neon green transparency */
-  color: #32cd32;
+  background-color: rgba(0, 255, 234, 0.1); /* Neon blue transparency */
+  color: #00ffea;
   font-size: 16px;
-  border: 1px solid rgba(50, 205, 50, 0.5); /* Neon green border */
-  box-shadow: 0 0 10px rgba(50, 205, 50, 0.5);
+  border: 1px solid rgba(0, 255, 234, 0.5); /* Neon blue border */
+  box-shadow: 0 0 10px rgba(0, 255, 234, 0.5);
 }
 
 .error-message {

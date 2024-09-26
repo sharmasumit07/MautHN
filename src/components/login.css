@@ -4,86 +4,101 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f9;
-  }
-  
-  .login-box {
+    background-color: #0b0f1c; /* Dark background for a cybersecurity theme */
+}
+
+.login-box {
     padding: 30px;
     border-radius: 10px;
-    background: #fff;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    background: #1c2333; /* Darker, sleek background for the login box */
+    box-shadow: 0px 4px 20px rgba(0, 255, 234, 0.15); /* Neon-like shadow for a futuristic effect */
     text-align: center;
     height: 60vh;
     width: 45rem;
-  }
-  
-  .login-logo {
+    border: 2px solid rgba(0, 255, 234, 0.25); /* Cybersecurity neon border */
+}
+
+.login-logo {
     width: auto;
     height: 10rem;
     
-  }
-  
-  .login-title {
+}
+
+.login-title {
     font-size: 24px;
     font-weight: bold;
-   
-    color: #007bff;
-  }
-  
-  .input-group {
+    color: #00ffea; /* Neon-like color for the title */
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Tech-style letter spacing */
+}
+
+.input-group {
     margin-bottom: 20px;
     text-align: left;
-  }
-  
-  .input-label {
+}
+
+.input-label {
     font-size: 14px;
     margin-bottom: 5px;
     display: block;
-    color: #555;
-  }
-  
-  .input-field {
+    color: #00ffea; /* Neon input label */
+}
+
+.input-field {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #333;
     border-radius: 5px;
     font-size: 14px;
-  }
-  
-  .login-btn {
-    background-color: #007bff;
-    color: white;
+    background-color: #1a1e2e; /* Dark input field background */
+    color: #fff; /* White text for better contrast */
+    transition: border 0.3s;
+}
+
+.input-field:focus {
+    border: 1px solid #00ffea; /* Glowing effect on input focus */
+    outline: none;
+}
+
+.login-btn {
+    background-color: #00ffea;
+    color: #0b0f1c;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-    transition: background 0.3s;
-  }
-  
-  .login-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  .login-message {
-    color: red;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.login-btn:hover {
+    background-color: #00b8a3; /* Slightly darker neon on hover */
+    transform: scale(1.05); /* Button grows slightly on hover */
+}
+
+.login-message {
+    color: #ff3d3d; /* Bright red for error messages */
     margin-top: 10px;
-  }
-  
-  .login-help-text {
+}
+
+.login-help-text {
     margin-top: 20px;
     font-size: 12px;
-    color: #666;
-  }
-  
-  .login-link {
-    color: #007bff;
+    color: #888; /* Subtle gray for help text */
+}
+
+.login-link {
+    color: #00ffea; /* Matching neon color for links */
     text-decoration: none;
-  }
-  
-  .login-footer {
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
+.login-footer {
     margin-top: 20px;
     font-size: 12px;
-    color: #666;
-  }
-  
+    color: #888;
+}
