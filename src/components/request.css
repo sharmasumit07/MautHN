@@ -56,7 +56,7 @@
 /* Button styling */
 .auth-btn {
   padding: 8px 16px;
-  background-color: #00ffea;
+  background-color: #007bff;
   color: white;
   border: none;
   border-radius: 5px;
@@ -68,7 +68,7 @@
 }
 
 .auth-btn:hover {
-  background-color: #00ffea;
+  background-color: #0056b3;
 }
 
 /* Ensure the button is centered within the DataGrid cell */
@@ -76,7 +76,6 @@
   display: flex;
   align-items: center;
   justify-content: center; /* Center the content horizontally */
-  color: #fff;
 }
 
 .dataGridContainer {
@@ -89,30 +88,27 @@
 .dataGridTable {
   width: 100%; /* Keep the width and height as per your original style */
   height: 400px;
-  color: #fff;
 }
 
 /* Remove circular background for pagination arrows */
 .MuiDataGrid-root .MuiButtonBase-root {
   
-  border-radius: 2 !important; /* Remove circular shape */
+  border-radius: 0 !important; /* Remove circular shape */
   box-shadow: none ; /* Remove any shadow effect */
-  color: #fff;
   
-
  
 }
 
 /* Adjust hover behavior for arrows */
 .MuiDataGrid-root .MuiButtonBase-root:hover {
-  background-color: #00ffea; /* No background on hover */
+  background-color: #0056b3; /* No background on hover */
   color: #fff !important; /* Set the arrow color */
 }
 
 /* Customize the arrow icon size */
 .MuiSvgIcon-root {
   font-size: 20px !important; /* Adjust icon size for arrows */
-  color: #fff; /* Set arrow color */
+  color: #333; /* Set arrow color */
 }
 
 /* Hide the pagination circle background */
@@ -127,9 +123,5 @@
 /* Hide any selected page background */
 .MuiPaginationItem-page.Mui-selected {
   background-color: transparent !important;
-  color: #333 !important; 
-}
-
-.MuiDataGrid-footerContainer{
-  color:#fff;
+  color: #333 !important; /* Color for the selected page */
 }

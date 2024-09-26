@@ -56,51 +56,28 @@ const Logs = () => {
 
   return (
     <Box className="dataGridContainer">
-      <Typography variant="h5" gutterBottom>Logs</Typography>
+  <Typography variant="h5" gutterBottom>Logs</Typography>
+{/* 
+  {errorMessage && (
+    <Typography color="error" sx={{ mb: 2 }}>{errorMessage}</Typography>
+  )} */}
 
-      <Box className="dataGridTable">
-        <DataGrid
-          rows={logs}           // Data from logs state
-          columns={columns}      // Columns defined for requester and timestamp
-          components={{ Toolbar: GridToolbar }}
-          pageSize={5}           // Number of rows per page
-          rowsPerPageOptions={[5, 10, 20]} // Options for page size
-          disableSelectionOnClick
-          autoHeight
-          sx={{
-            '& .MuiDataGrid-root': {
-              backgroundColor: '#1a1a1a',
-            },
-            '& .MuiDataGrid-cell': {
-              color: 'white',
-            },
-            '& .MuiDataGrid-columnHeader': {
-              color: 'white',
-              backgroundColor: 'Silver',
-              fontSize: '1.5rem',
-            },
-            '& .MuiDataGrid-footerContainer': {
-              backgroundColor: '#1a1a1a',
-              color: 'white',
-            },
-            '& .MuiDataGrid-row:hover': {
-              backgroundColor: '#333333',
-            },
-            '& .MuiTablePagination-root': {
-              color: 'white',
-            },
-            '& .MuiDataGrid-toolbarContainer': {
-              backgroundColor: '#1a1a1a',
-              color: 'white',
-            },
-            '& .MuiDataGrid-overlay': {
-              backgroundColor: '#1a1a1a',
-              color: 'red',
-            },
-          }}
-        />
-      </Box>
-    </Box>
+  <Box className="dataGridTable">
+    <DataGrid
+      rows={logs}           // Data from logs state
+      columns={columns}      // Columns defined for requester and timestamp
+      components={{ Toolbar: GridToolbar }}
+      pageSize={5}           // Number of rows per page
+      rowsPerPageOptions={[5, 10, 20]} // Options for page size
+      slots={{ toolbar: GridToolbar }}  // Match the second grid table
+      disableSelectionOnClick
+      autoHeight
+    />
+  </Box>
+
+  
+</Box>
+
   );
 };
 
